@@ -3,42 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Anthony A. Cabulang">
     <title>Pizza Order Form</title>
 </head>
 <body>
     <h1>Pizza Order Form</h1>
 
     <label for="first_name">First Name: </label>
-    <input type="text"/>
-    <br/>
+    <input type="text" id="first_name">
+    <br>
 
     <label for="last_name">Last Name: </label>
-    <input type="text"/>
-    <br/>
+    <input type="text" id="last_name">
+    <br>
 
-    <label for="email">Email Address: </label>
-    <input type="email"/>
-    <br/>
+    <label for="email_address">Email Address: </label>
+    <input type="email" id="email_address">
+    <br>
 
     <label for="contact_number">Contact Number: </label>
-    <input type="number"/>
-    <br/>
+    <input type="number" id="contact_number">
+    <br>
 
     <label for="delivery_date">Preferred Delivery Date: </label>
-    <input type="date"/>
-    <br/>
-    <br/>
+    <input type="date" id="delivery_date">
+    <br>
+    <br>
 
-    <label for="size">Size: </label>
-    <br/>
+    <label>Size: </label>
+    <br>
     <input type="radio">Small
     <input type="radio">Medium
     <input type="radio">Large
-    <br/>
-    <br/>
+    <br>
+    <br>
 
-    <label for="flavor">Flavor: </label>
-    <br/>
+    <label>Flavor: </label>
+    <br>
 
     <input type="checkbox">Hawaiian (Php 150.00)
         <select>
@@ -46,7 +47,7 @@
         <option value="2">2</option>
         <option value="3">3</option>
         </select>
-    <br/>
+    <br>
 
     <input type="checkbox"> Pepperoni (Php 140.00)
         <select>
@@ -54,7 +55,7 @@
         <option value="2">2</option>
         <option value="3">3</option>
         </select>
-    <br/>
+    <br>
 
     <input type="checkbox"> Vegetable (Php 130.00)
         <select>
@@ -62,23 +63,23 @@
         <option value="2">2</option>
         <option value="3">3</option>
         </select>
-    <br/>
-    <br/>
+    <br>
+    <br>
 
     <label for="credit_card">Credit Card Number: </label>
-    <input type="number">
-    <br/>
+    <input type="number" id="credit_card">
+    <br>
 
     <label for="PIN">PIN: </label>
-    <input type="number">
-    <br/>
-    <br/>
+    <input type="number" id="PIN">
+    <br>
+    <br>
 
     <label for="note">Additional Note: </label>
-    <br/>
-    <textarea name="" id="" cols="30" rows="10"></textarea>
-    <br/>
-    <br/>
+    <br>
+    <textarea name="note" id="note" cols="30" rows="10"></textarea>
+    <br>
+    <br>
 
     <input type="submit" value="Submit Order">
 
