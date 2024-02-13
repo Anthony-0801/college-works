@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#logo{
+    min-height: 130px;
+    width: 260px;
+    background-color: #B97A57;
+}
+#wrapper{
+    width: 940px;
+    background-color: #FFD9B7;
+    margin: 0px auto;
+}
+#navigation{
+    min-height: 130px;
+    width: 655px;
+    background-color: #FF7F27;
+}
+#main_content{
+    min-height: 250px;
+    width: 860px;
+    background-color: #880015;
+}
+#about{
+    min-height: 250px;
+    width: 650px;
+    background-color: #FFAEC9;
+}
+#advertisement{
+    min-height: 200px;
+    width: 155px;
+    background-color: #C8BFE7;
+}
+.sponsors{
+    min-height: 65px;
+    width: 310px;
+    background-color: #FFFF88;
+}
