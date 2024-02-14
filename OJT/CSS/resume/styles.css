@@ -1,0 +1,160 @@
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Calibri', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+main {
+    background-color: #e7eef4;
+    width: 980px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.employee{
+    display: block;
+    margin: 0;
+}
+
+.employee img{
+    width: 200px;
+    height: 200px;
+    margin: 20px 20px;
+}
+
+article {
+    display: inline-block;
+    margin: 30px 20px;
+    width: 695px;
+    padding: 0 20px;
+    vertical-align: top;
+}
+
+#first {
+    border-bottom: 3px solid #2d4767;
+    width: 100%;
+}
+
+h1 {
+    font-size: 3.5em;
+    font-weight: 1000;
+    letter-spacing: 10px;
+}
+
+h2 {
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#second {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+#second p {
+    display: inline-block;
+    word-spacing: 15px;
+    font-size: 17.5px;
+    font-weight: bolder;
+    padding-right: 20px;
+}
+
+#big-box {
+    display: block;
+    width: 940px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #e5e8ed;
+}
+
+#big-box h3, .box1 h3, .box2 h3 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+#big-box p {
+    font-size: 24px;
+    word-spacing: 3px;
+    text-align: justify;
+    padding: 10px;
+}
+
+.main-box {
+    width: 940px;
+    display: inline-block;
+    padding: 0;
+}
+
+.box1 {
+    display: inline-block;
+    width: 46%;
+}
+
+.box1 img {
+    width: 75px;
+    height: 75px;
+    margin: 2px;
+}
+
+.box2 {
+    display: inline-block;
+    width: 53.5%;
+    vertical-align: top;
+    background-color: #e5e8ed;
+    padding: 0 40px 0;
+}
+
+.box2 span {
+    font-weight: bolder;
+    font-size: 24px;
+    padding:10px;
+}
+
+.box2 p {
+    font-size: 23px;
+    text-align: left;
+    padding: 0 0 10px 10px;
+}
+
+#special {
+    word-spacing: 0px;
+    font-size: 22.6px;
+}
+
+#last {
+    display: inline-block;
+    height: auto;
+    margin: 0 25% 5px;
+    vertical-align: middle;
+}
+
+#last a{
+    color: #333;
+    vertical-align: 5px;
+}
+
+#last img {
+    width: 40px;
+    height: auto;
+    margin: 0;
+}
