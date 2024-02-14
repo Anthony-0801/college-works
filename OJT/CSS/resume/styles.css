@@ -144,7 +144,7 @@ h2 {
 #last {
     display: inline-block;
     height: auto;
-    margin: 0 25%;
+    margin: 0 25% 5px;
     vertical-align: middle;
 }
 
