@@ -23,6 +23,10 @@ h1 {
   vertical-align: 50px;
   margin: 0 200px;
 }
+img {
+  display: inline-block;
+  width: 300px;
+}
 main {
   width: 100%;
   height: auto;
@@ -32,10 +36,6 @@ main {
   text-align: center;
   display: inline-block;
   font: bold 2em 'Calibri', sans-serif;
-}
-img {
-  display: inline-block;
-  width: 300px;
 }
 .dates div {
   display: inline-block;
