@@ -113,11 +113,18 @@
         overflow: hidden;
     }
 
-    #logo, #navigation{
-        width: unset;
-        display: block;
+    #logo {
+        width: 25%;
+        display: inline-block;
         padding: 0;
-        margin: 2%;
+        margin: 0 4% 4% 0;
+    }
+    
+    #navigation{
+        width: 70%;
+        display: inline-block;
+        padding: 0;
+        margin: 0 auto 4%;
     }
 
     #main_content{
@@ -140,9 +147,8 @@
 
     .sponsors {
         display:inline-block;
-        margin: 4% 2%;
-        padding: 0;
-        width: 45%;
+        margin: 4% auto;
+        width: 49%;
     }
 }
 
