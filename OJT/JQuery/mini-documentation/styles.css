@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: #49537A;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+nav {
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+    background-color: #495CA8;
+    color: white;
+    padding: 4em 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 8px 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero {
+    display: inline-block;
+    width: 65%;
+    height: 100vh;
+    margin: 0 auto;
+    margin-left: 2%;
+    vertical-align: top;
+    overflow-y: auto;
+    color: white;
+}
+
+.hero h1 {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 3em;
+}
+
+.hero section {
+    padding: 20px 0;
+}
+
+.hero section.divider {
+    border-bottom: 2px solid white;
+    width: 100%;
+}
+
+.hero h2 {
+    padding: 20px 0;
+    text-align: start;
+    font-size: 2em;
+}
+.hero h3 {
+    text-align: start;
+    font-size: 1.5em;
+}
+
+.hero section button {
+    padding: 10px 20px;
+    background-color: #495CA8;
+    border: 1px solid white;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+}
+
+.hero section div {
+    width: 100px;
+    height: 100px;
+    background-color: #A2B2F3;
+    margin: 0 auto;
+    color: black;
+    text-align: center;
+}
+
+.selected {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+#box {
+    overflow: hidden;
+    font-size: 0.7em;
+}
