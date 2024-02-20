@@ -25,19 +25,19 @@ main {
 }
 
 .employee{
-    display: block;
+    display: inline-block;
     margin: 0;
 }
 
 .employee img{
-    width: 200px;
+    width: 220px;
     height: 200px;
     margin: 20px 20px;
 }
 
 article {
     display: inline-block;
-    margin: 30px 20px;
+    margin: 20px 10px;
     width: 695px;
     padding: 0 20px;
     vertical-align: top;
@@ -49,13 +49,13 @@ article {
 }
 
 h1 {
-    font-size: 3.5em;
+    font-size: 3.3em;
     font-weight: 1000;
     letter-spacing: 10px;
 }
 
 h2 {
-    font-size: 1.7em;
+    font-size: 1.6em;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -157,4 +157,20 @@ h2 {
     width: 40px;
     height: auto;
     margin: 0;
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+   
+}
+
+
+/* Tablet */
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+    
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+    
 }
