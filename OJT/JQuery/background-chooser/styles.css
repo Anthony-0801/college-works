@@ -17,3 +17,11 @@ h1 {
     margin: 30px;
     font-family: Verdana;
 }
+
+.selected {
+    background-color: lightgray;
+}
+
+.selected img {
+    border: none;
+}

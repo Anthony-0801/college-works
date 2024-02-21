@@ -9,10 +9,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-            $('img').on("click", function(){
-                var temp = $(this).attr('src');
-                $('body').css('background-image', 'url(' + temp + ')');
+            $('#main_box').on("click", function(){
+                location.reload();
             });
+
+            $('.mini_boxes').on("click", function(event){
+                event.stopPropagation();
+                var temp = $(this).attr('src');
+                $('#main_box').css('background-image', 'url(' + temp + ')');
+                $(this).css('border', '2px solid yellow').siblings().css('border', 'none');
+            });
+           
         });
     </script>
 </head>
