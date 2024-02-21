@@ -9,10 +9,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
+            // .click()
             $("#clicker").on("click", function(){
                 $("#click").css("background-color", "yellow");
             });
 
+            // .hide() .show()
             $("#hider").on("click", function(){
                 $("#hide").hide("slow").text("I'm box and I'll disappear");
             });
@@ -21,10 +23,12 @@
                 $("#hide").show("slow").text("I'm box and I'll appear");
             });
 
+            // .toggle()
             $("#toggler").on("click", function(){
                 $("#toggle").toggle("slow");
             });
 
+            // .slideDown() .slideUp()
             $("#sliderDown").on("click", function(){
                 $("#slideDown").slideDown("slow").text("I'm box and I'm sliding down");
             });
@@ -33,10 +37,12 @@
                 $("#slideDown").slideUp("slow").text("I'm box and I'm sliding up");
             });
 
+            // .slideToggle()
             $("#slideToggler").on("click", function(){
                 $("#slideToggle").slideToggle("slow");
             });
-            
+
+            // .fadeOut() .fadeIn()
             $("#faderIn").on("click", function(){
                 $("#fadeIn").fadeIn("slow").text("I'm box and I'm fading in");
             });
@@ -45,16 +51,43 @@
                 $("#fadeIn").fadeOut("slow").text("I'm box and I'm fading out");
             });
 
+            // .addClass()
             $("#adderClass").on("click", function(){
                 $("#addClass span").addClass("selected");
             });
 
+            // .before() .after()
             $("#beforer").on("click", function(){
                 $("#box p").before("I am");
             });
 
             $("#afterer").on("click", function(){
                 $("#box p").after("NO, I am not!");
+            });
+
+            // .append()
+            $("#appender").on("click", function(){
+                $("#append p").append("<p class='selected'> I'm appended</p>");
+            });
+
+            // .html()
+            $("#htmler").on("click", function(){
+                $("#html").html("<p class='selected'>I'm box and I'm changed</p>");
+            });
+
+            // .attr()
+            $("#attrer").on("click", function(){
+                $("#attr p").attr("class", "selected");
+            });
+
+            $("#valer").on("click", function(){
+                var userInput = window.prompt("Please enter your input:");
+                $("#val").val(userInput);
+            });
+
+            // .text()
+            $("#texter").on("click", function(){
+                $("#text p").text("I'm box and I'm changed");
             });
         });
     </script>
@@ -75,8 +108,8 @@
                 <li><a href="#addClass">.addClass()</a></li>
                 <li><a href="#before">.before()</a></li>
                 <li><a href="#after">.after()</a></li>
-                <li><a href="#append">.append()</a></li>
-                <li><a href="#html">.html()</a></li>
+                <li><a href="#appender">.append()</a></li>
+                <li><a href="#htmler">.html()</a></li>
                 <li><a href="#attr">.attr()</a></li>
                 <li><a href="#val">.val()</a></li>
                 <li><a href="#text">.text()</a></li>
@@ -140,7 +173,6 @@
             </section>
 
             <section class="divider">
-
                 <section>
                     <h2>.fadeOut()</h2>
                     <h3>Description: Hide the matched elements by fading them to transparent.</h3>
@@ -162,7 +194,6 @@
             </section>
 
             <section class="divider">
-
                 <section>
                     <h2>.before()</h2>
                     <h3>Description: Insert content, specified by the parameter, before each element in the set of matched elements.</h3>
@@ -176,6 +207,48 @@
                 </div>
             </section>
 
+            <section class="divider">
+                <h2>.append()</h2>
+                <h3>Description: Insert content, specidfied by the parameter, to the end of each element in the set of matched elements.</h3>
+                <button id="appender">Click me to append</button>
+                <div id="append">
+                    <p>I'm box and</p>
+                </div>
+            </section>
+
+            <section class="divider">
+                <h2>.html()</h2>
+                <h3>Description: Set the HTML contents of each element in the set of matched elements.</h3>
+                <button id="htmler">Click me to change</button>
+                <div id="html">
+                    <p>I'm box and I'm not changed</p>
+                </div>
+            </section>
+
+            <section class="divider">
+                <h2>.attr()</h2>
+                <h3>Description: Get the value of an attribute for the first element in the set of matched elements or set one or more attributes for every matched element.</h3>
+                <button id="attrer">Click me to get attribute</button>
+                <div id="attr">
+                    <p>I'm box and I have an attribute</p>
+                </div>
+            </section>
+
+            <section class="divider">
+                <h2>.val()</h2>
+                <h3>Description: Get the current value of the first element in the set of matched elements or set the value of every matched element.</h3>
+                <button id="valer">Click me to enter a value</button>
+                <input id="val" type="text" value="" placeholder="I'll show the value">
+            </section>
+
+            <section class="divider">
+                <h2>.text()</h2>
+                <h3>Description: Get the combined text contents of each element in the set of matched elements, including their descendants, or set the text contents of the matched elements.</h3>
+                <button id="texter">Click me to change</button>
+                <div id="text">
+                    <p>I'm box and I'm not changed</p>
+                </div>
+            </section>
         </section>
     </main>
 </body>

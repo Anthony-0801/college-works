@@ -110,3 +110,12 @@ nav ul li a {
     overflow: hidden;
     font-size: 0.7em;
 }
+
+#append {
+    overflow: hidden;
+}
+
+#val {
+    padding: 10px 20px;
+    border: 1px solid black;
+}
