@@ -10,3 +10,35 @@
 	margin: 0;
     box-sizing: border-box;
 }
+
+main {
+    width: 100%;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 1em 0;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin: .5em 0;
+}
+
+section {
+    width: 70vw;
+    display: inline-block;
+    margin-left: 40vh;
+}
+
+img {
+    width: 10vw;
+    height: 14vh;
+    display: inline-block;
+    margin: 3px;
+}

@@ -9,11 +9,57 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-            
+            $('img').on("mouseenter", function(){
+                var temp = $(this).attr('src');
+                $(this).attr('src', $(this).attr('data-alt-src'));
+                $(this).attr('data-alt-src', temp);
+            });
+
+            $('img').on("mouseleave", function(){
+                var temp = $(this).attr('src');
+                $(this).attr('src', $(this).attr('data-alt-src'));
+                $(this).attr('data-alt-src', temp);
+            });
         });
     </script>
 </head>
 <body>
-    
+    <main>
+        <h1>Fortune Cookie</h1>
+        <h2>Direction: Close your eyes then point at this page. Open your device and follow the advice your mouse pointer lands on</h2>
+
+        <section>
+            <img src="images/cookie.jpg" data-alt-src="images/advice1.PNG" alt="fortune cookie">  
+            <img src="images/cookie.jpg" data-alt-src="images/advice2.PNG" alt="fortune cookie">
+            <img src="images/cookie.jpg" data-alt-src="images/advice3.PNG" alt="fortune cookie"> 
+            <img src="images/cookie.jpg" data-alt-src="images/advice4.PNG" alt="fortune cookie"> 
+            <img src="images/cookie.jpg" data-alt-src="images/advice5.PNG" alt="fortune cookie">
+            <img src="images/cookie.jpg" data-alt-src="images/advice6.PNG" alt="fortune cookie">
+            <img src="images/cookie.jpg" data-alt-src="images/advice7.PNG" alt="fortune cookie">
+            <img src="images/cookie.jpg" data-alt-src="images/advice8.PNG" alt="fortune cookie">
+            <img src="images/cookie.jpg" data-alt-src="images/advice9.PNG" alt="fortune cookie">
+            <img src="images/cookie.jpg" data-alt-src="images/advice10.PNG" alt="fortune cookie">
+            <img src="images/cookie.jpg" data-alt-src="images/advice11.PNG" alt="fortune cookie">
+            <img src="images/cookie.jpg" data-alt-src="images/advice12.PNG" alt="fortune cookie">
+            <img src="images/cookie.jpg" data-alt-src="images/advice13.PNG" alt="fortune cookie">
+            <img src="images/cookie.jpg" data-alt-src="images/advice14.PNG" alt="fortune cookie">
+            <img src="images/cookie.jpg" data-alt-src="images/advice15.PNG" alt="fortune cookie">
+            <img src="images/cookie.jpg" data-alt-src="images/advice16.PNG" alt="fortune cookie">
+            <img src="images/cookie.jpg" data-alt-src="images/advice17.PNG" alt="fortune cookie">
+            <img src="images/cookie.jpg" data-alt-src="images/advice18.PNG" alt="fortune cookie">
+            <img src="images/cookie.jpg" data-alt-src="images/advice19.PNG" alt="fortune cookie">
+            <img src="images/cookie.jpg" data-alt-src="images/advice20.PNG" alt="fortune cookie">
+            <img src="images/cookie.jpg" data-alt-src="images/advice21.PNG" alt="fortune cookie">
+            <img src="images/cookie.jpg" data-alt-src="images/advice22.PNG" alt="fortune cookie">
+            <img src="images/cookie.jpg" data-alt-src="images/advice23.PNG" alt="fortune cookie">
+            <img src="images/cookie.jpg" data-alt-src="images/advice24.PNG" alt="fortune cookie">
+            <img src="images/cookie.jpg" data-alt-src="images/advice25.PNG" alt="fortune cookie">
+            <img src="images/cookie.jpg" data-alt-src="images/advice26.PNG" alt="fortune cookie">
+            <img src="images/cookie.jpg" data-alt-src="images/advice27.PNG" alt="fortune cookie">
+            <img src="images/cookie.jpg" data-alt-src="images/advice28.PNG" alt="fortune cookie">
+            <img src="images/cookie.jpg" data-alt-src="images/advice29.PNG" alt="fortune cookie">
+            <img src="images/cookie.jpg" data-alt-src="images/advice30.PNG" alt="fortune cookie">
+        </section>
+    </main>
 </body>
 </html>
