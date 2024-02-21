@@ -9,11 +9,36 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-            
+            $('img').click(function(){
+                $(this).remove();
+            });
+
+            $('button').click(function(){
+                location.reload();
+            });
         });
     </script>
 </head>
 <body>
-    
+    <section>
+        <div>
+        <img src="images/multicolor_candy.png" alt="multicolor_candy">
+        <img src="images/orange_candy.png" alt="orange_candy">
+        <img src="images/yellow_candy.png" alt="yellow_candy">
+        <img src="images/red_candy.png" alt="red_candy">
+        <img src="images/yellow_candy.png" alt="yellow_candy">
+        <img src="images/multicolor_candy.png" alt="multicolor_candy">
+        <img src="images/yellow_candy.png" alt="yellow_candy">
+        <img src="images/orange_candy.png" alt="orange_candy">
+        <img src="images/red_candy.png" alt="red_candy">
+        <img src="images/multicolor_candy.png" alt="multicolor_candy">
+        <img src="images/orange_candy.png" alt="orange_candy">
+        <img src="images/red_candy.png" alt="red_candy">
+        </div>
+
+        <div>
+            <button>Reset Game</button>
+        </div>
+    </section>
 </body>
 </html>
