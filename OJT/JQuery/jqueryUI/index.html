@@ -8,12 +8,78 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/excite-bike/jquery-ui.css">
     <script>
-        
+    $( function() {
+        $( ".sortable" ).sortable({
+            revert: true
+        });
+         $( ".draggable" ).draggable({
+            connectToSortable: ".sortable",
+            helper: function() {
+            return $(this).clone().css({
+                'width': $(this).width(),
+                'height': $(this).height()
+            });
+        },
+        revert: "invalid",
+        start: function() {
+            $(this).addClass('selected');
+        },
+        stop: function() {
+            $(this).removeClass('selected');
+        }
+    });
+    $( "ul, li" ).disableSelection();
+});
     </script>
 </head>
 <body>
-    
+    <main>
+        <section>
+            <h1>To-do</h1>
+                <ul>
+                    <li class="draggable ui-state-highlight">Drag me</li>
+                    <!-- More list items... -->
+                </ul>
+        </section>
+
+        <section>
+            <h1>In-Progress</h1>
+                <ul class="sortable">
+                    <li class="draggable ui-state-default">Item 1</li>
+                    <li class="draggable ui-state-default">Item 2</li>
+                    <li class="draggable ui-state-default">Item 3</li>
+                </ul>
+        </section>
+
+        <section>
+            <h1>For-Approval</h1>
+                <ul class="sortable">
+                    <li class="draggable ui-state-default">Item 1</li>
+                    <li class="draggable ui-state-default">Item 2</li>
+                    <li class="draggable ui-state-default">Item 3</li>
+                </ul>
+        </section>
+
+        <section>
+            <h1>Testing</h1>
+                <ul class="sortable">
+                    <li class="draggable ui-state-default">Item 1</li>
+                    <li class="draggable ui-state-default">Item 2</li>
+                    <li class="draggable ui-state-default">Item 3</li>
+                </ul>
+        </section>
+
+        <section>
+            <h1>Done</h1>
+                <ul class="sortable">
+                    <li class="draggable ui-state-default">Item 1</li>
+                    <li class="draggable ui-state-default">Item 2</li>
+                    <li class="draggable ui-state-default">Item 3</li>
+                </ul>
+        </section>
+
+    </main>
 </body>
 </html>
