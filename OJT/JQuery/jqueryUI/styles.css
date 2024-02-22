@@ -1,0 +1,63 @@
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/background.svg);
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*Trying CSS Nesting just for an experiment*/
+
+main {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    margin-left: .6em;
+}
+
+section {
+    width: 19.5vw;
+    height: 95vh;
+    display: inline-block;
+    border: 1px solid black;
+    padding: 1em 0;
+    vertical-align: top;
+
+    h1 {
+        text-align: center;
+        font-size: 2em;
+        padding: 1em 0;
+        border-bottom: 1px solid black;
+    }
+
+    ul {
+        list-style: none;
+        padding: 1em 0;
+        text-align: center;
+    
+        li {
+            padding: 1em 0;
+            border-bottom: 1px solid black;
+            cursor: pointer;
+            list-style-type: none;
+        }
+
+        li a {
+            text-decoration: none;
+            color: black;
+            display: block;
+            padding: 1em;
+        }
+    }
+ }

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Anthony A. Cabulang">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="responsiveslides.min.js"></script>
+    <script src="starlight.js"></script>
+    <script src="jquery.ripples-min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Coding Stars - Anthony's Simple Platform</title>
+    <script>
+      $(document).ready(function(){
+        $(".rslides").responsiveSlides();
+
+        $('.water').ripples({
+          resolution: 512,
+          dropRadius: 20,
+          perturbance: 0.04,
+        });
+      });
+    </script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-light pt-5 pb-4">
+        <div class="container-xxl">
+          <!-- navbar brand / title -->
+          <a class="navbar-brand" href="#">
+            <span class="text-secondary fw-bold">
+              <img src="images/rockstar.png" id="logo" alt="codingstar logo">
+                Coding Stars
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Get in Touch</a>
+                    </li>
+                    <li class="nav-item d-md-none">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item ms-2 d-none d-md-inline">
+                        <a class="btn btn-success" href="#">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+       <header class="container-lg">
+            <div class="row g-4 justify-content-center align-items-center">
+                <div class="col-md-5 text-center text-md-start">
+                    <h1>
+                        <div class="display-2">Coding Stars</div>
+                        <div class="display-7 text-muted">Make your Coding Skills Shine Bright!</div>
+                    </h1>
+                    <p class="lead my-4 text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi iste optio deleniti ipsa, dolore quod dicta laborum dignissimos quo impedit!</p>
+                    <a href="#ipsum" target="_modal" class="btn btn-primary">Learn More</a>
+                </div>
+                <div class="col-md-5 text-center d-none d-md-block">
+                  <ul class="rslides">
+                    <li><img src="images/coding.jpg" class="img-fluid" alt="a coder coding"></li>
+                    <li><img src="images/coding1.jpg" class="img-fluid" alt="a coder coding"></li>
+                    <li><img src="images/coding2.jpg" class="img-fluid" alt="a coder coding"></li>
+                    <li><img src="images/coding3.jpg" class="img-fluid" alt="a coder coding"></li>
+                    <li><img src="images/coding4.jpg" class="img-fluid" alt="a coder coding"></li>
+                    <li><img src="images/coding5.jpg" class="img-fluid" alt="a coder coding"></li>
+                  </ul>
+                    
+                </div>
+            </div>
+       </header>
+
+       <section id="pricing" class="bg-light mt-5 starlight">
+        <div class="container-lg water">
+          <div class="text-center">
+            <h2>Pricing Plans</h2>
+            <p class="lead text-muted">Choose a Pricing Plan that Suits You.</p>
+          </div>
+    
+          <div class="row my-5 g-0 align-items-center justify-content-center">
+            <div class="col-8 col-lg-4 col-xl-3">
+              <div class="card border-0">
+                <div class="card-body text-center py-4">
+                  <h4 class="card-title">Starter Edition</h4>
+                  <p class="lead card-subtitle">Premium Lessons and Content</p>
+                  <p class="display-5 my-4 text-primary fw-bold">₱500</p>
+                  <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, vitae magni! Repellat commodi a fuga corporis saepe dolorum.</p>
+                  <a href="#" class="btn btn-outline-primary btn-lg mt-3">
+                    Buy Now
+                  </a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-9 col-lg-4">
+              <div class="card border-primary border-2">
+                <div class="card-header text-center text-primary">Most Popular</div>
+                <div class="card-body text-center py-5">
+                  <h4 class="card-title">Complete Edition</h4>
+                  <p class="lead card-subtitle">Premium Lessons and Content Updates</p>
+                  <p class="display-4 my-4 text-primary fw-bold">₱1000</p>
+                  <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, vitae magni! Repellat commodi a fuga corporis saepe dolorum.</p>
+                  <a href="#" class="btn btn-outline-primary btn-lg mt-3">
+                    Buy Now
+                  </a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-8 col-lg-4 col-xl-3">
+              <div class="card border-0">
+                <div class="card-body text-center py-4">
+                  <h4 class="card-title">Ultimate Edition</h4>
+                  <p class="lead card-subtitle">ALL OF THE ABOVE, ++MORE!</p>
+                  <p class="display-5 my-4 text-primary fw-bold">₱2000</p>
+                  <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, vitae magni! Repellat commodi a fuga corporis saepe dolorum.</p>
+                  <a href="#" class="btn btn-outline-primary btn-lg mt-3">
+                    Buy Now
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container-lg">
+        
+          <div class="text-center">
+            <h2>Get in Touch</h2>
+            <p class="lead">Questions to ask? Fill out the form to contact me directly...</p>
+          </div>
+          <div class="row justify-content-center my-5">
+            <div class="col-lg-6">
+              
+              <form>
+                <label for="email" class="form-label">Email address:</label>
+                <div class="input-group mb-4">
+                  <span class="input-group-text">
+                    <i class="bi bi-envelope-fill text-secondary"></i>
+                  </span>
+                  <input type="text" id="email" class="form-control" placeholder="e.g. mario@example.com" />
+                </div>
+                <label for="name" class="form-label">Name:</label>
+                <div class="mb-4 input-group">
+                  <span class="input-group-text">
+                    <i class="bi bi-person-fill text-secondary"></i>
+                  </span>
+                  <input type="text" id="name" class="form-control" placeholder="e.g. Mario" />
+                </div>
+                <label for="subject" class="form-label">What is Your Question About?</label>
+                <div class="mb-4 input-group">
+                  <span class="input-group-text">
+                    <i class="bi bi-chat-right-dots-fill text-secondary"></i>
+                  </span>
+                  <select class="form-select" id="subject">
+                    <option value="pricing" selected>Pricing Query</option>
+                    <option value="content">Content Query</option>
+                    <option value="other">Other Query</option>
+                  </select>
+                </div>
+                <div class="mb-4 mt-5 form-floating">
+                  <textarea class="form-control" id="query" style="height: 140px" placeholder="query"></textarea>
+                  <label for="query">Your Query...</label>
+                </div>
+                <div class="mb-4 text-center">
+                  <button type="submit" class="btn btn-default btn-outline-success">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main> 
+</body>
+</html>

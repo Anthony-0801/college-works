@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Anthony A. Cabulang">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        $( function() {
+            $( "#date" ).datepicker();
+
+            $( "#myForm" ).on("submit", function(event) {
+                event.preventDefault();
+
+                var firstName = $("#firstName").val();
+                var lastName = $("#lastName").val();
+                var date = $("#date").val();
+
+                if (firstName === "" || lastName === "" || date === "") {
+                    alert("Form is invalid. Please fill out all fields.");
+                } else {
+                    alert(`Thank you ${firstName} ${lastName} for scheduling your vaccination on ${date}.`);
+                }
+            });
+        });
+    </script>
+</body>
+</head>
+<body>
+    <h1>Scheduling Form for Vaccination</h1>
+    <form id="myForm">
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName"><br>
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName"><br>
+        <label for="date">Preferred Date:</label><br>
+        <input type="text" id="date" name="date"><br>
+        <input type="submit" value="Submit">
+    </form>
+</html>

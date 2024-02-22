@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Anthony A. Cabulang">
+    <title>JQuery Mini Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // .click()
+            $("#clicker").on("click", function(){
+                $("#click").css("background-color", "yellow");
+            });
+
+            // .hide() .show()
+            $("#hider").on("click", function(){
+                $("#hide").hide("slow").text("I'm box and I'll disappear");
+            });
+
+            $("#show").on("click", function(){
+                $("#hide").show("slow").text("I'm box and I'll appear");
+            });
+
+            // .toggle()
+            $("#toggler").on("click", function(){
+                $("#toggle").toggle("slow");
+            });
+
+            // .slideDown() .slideUp()
+            $("#sliderDown").on("click", function(){
+                $("#slideDown").slideDown("slow").text("I'm box and I'm sliding down");
+            });
+
+            $("#slideUp").on("click", function(){
+                $("#slideDown").slideUp("slow").text("I'm box and I'm sliding up");
+            });
+
+            // .slideToggle()
+            $("#slideToggler").on("click", function(){
+                $("#slideToggle").slideToggle("slow");
+            });
+
+            // .fadeOut() .fadeIn()
+            $("#faderIn").on("click", function(){
+                $("#fadeIn").fadeIn("slow").text("I'm box and I'm fading in");
+            });
+
+            $("#faderOut").on("click", function(){
+                $("#fadeIn").fadeOut("slow").text("I'm box and I'm fading out");
+            });
+
+            // .addClass()
+            $("#adderClass").on("click", function(){
+                $("#addClass span").addClass("selected");
+            });
+
+            // .before() .after()
+            $("#beforer").on("click", function(){
+                $("#box p").before("I am");
+            });
+
+            $("#afterer").on("click", function(){
+                $("#box p").after("NO, I am not!");
+            });
+
+            // .append()
+            $("#appender").on("click", function(){
+                $("#append p").append("<p class='selected'> I'm appended</p>");
+            });
+
+            // .html()
+            $("#htmler").on("click", function(){
+                $("#html").html("<p class='selected'>I'm box and I'm changed</p>");
+            });
+
+            // .attr()
+            $("#attrer").on("click", function(){
+                $("#attr p").attr("class", "selected");
+            });
+
+            $("#valer").on("click", function(){
+                var userInput = window.prompt("Please enter your input:");
+                $("#val").val(userInput);
+            });
+
+            // .text()
+            $("#texter").on("click", function(){
+                $("#text p").text("I'm box and I'm changed");
+            });
+        });
+    </script>
+</head>
+<body>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="#clicker">.click()</a></li>
+                <li><a href="#hider">.hide()</a></li>
+                <li><a href="#show">.show()</a></li>
+                <li><a href="#toggler">.toggle()</a></li>
+                <li><a href="#sliderDown">.slideDown()</a></li>
+                <li><a href="#slideUp">.slideUp()</a></li>
+                <li><a href="#slideToggler">.slideToggle()</a></li>
+                <li><a href="#faderOut">.fadeOut()</a></li>
+                <li><a href="#faderIn">.fadeIn()</a></li>
+                <li><a href="#addClass">.addClass()</a></li>
+                <li><a href="#before">.before()</a></li>
+                <li><a href="#after">.after()</a></li>
+                <li><a href="#appender">.append()</a></li>
+                <li><a href="#htmler">.html()</a></li>
+                <li><a href="#attr">.attr()</a></li>
+                <li><a href="#val">.val()</a></li>
+                <li><a href="#text">.text()</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <h1>My JQuery Mini Documentation</h1>
+
+            <section class="divider">
+                <h2>.click()</h2>
+                <h3>Description: Bind an event handler to the "click" event.</h3>
+                <button id="clicker">Click me</button>
+                <div id="click">
+                    <p>I'm box</p>
+                </div>
+            </section>
+
+            <section class="divider">
+                <h2>.hide()</h2>
+                <h3>Description: Hide the matched elements.</h3>
+
+                <section>
+                    <h2>.show()</h2>
+                    <h3>Description: Display the matched elements.</h3>
+                </section>
+
+                <button id="hider">Hide me</button> <button id="show">Show me</button>
+                <div id="hide"></div>
+            </section>
+
+            <section class="divider">
+                <h2>.toggle()</h2>
+                <h3>Description: Display or hide the matched elements.</h3>
+                <button id="toggler">Toggle me</button>
+                <div id="toggle">
+                    <p>I'm box and I'm magic</p>
+                </div>
+            </section>
+
+            <section class="divider">
+                <h2>.slideDown()</h2>
+                <h3>Description: Display the matched elements with sliding motion.</h3>
+
+                <section>
+                    <h2>.slideUp()</h2>
+                    <h3>Description: Hide the matched elements with sliding motion.</h3>
+                </section>
+
+                <button id="sliderDown">Slide me down</button> <button id="slideUp">Slide me up</button>
+                <div id="slideDown"></div>
+            </section>
+
+            <section class="divider">
+                <h2>.slideToggle()</h2>
+                <h3>Description: Display or hide the matched elements with sliding motion.</h3>
+                <button id="slideToggler">Toggle me to slide</button>
+                <div id="slideToggle">
+                    <p>I'm box and I'm sliding</p>
+                </div>
+            </section>
+
+            <section class="divider">
+                <section>
+                    <h2>.fadeOut()</h2>
+                    <h3>Description: Hide the matched elements by fading them to transparent.</h3>
+                </section>
+
+                <h2>.fadeIn()</h2>
+                <h3>Description: Display by fading them to opaque.</h3>
+                <button id="faderIn">Click me to fade in</button> <button id="faderOut">Click me to fade out</button>
+                <div id="fadeIn"></div>
+            </section>
+
+            <section class="divider">
+                <h2>.addClass()</h2>
+                <h3>Description: Adds the specified class(es) to each element in the set of matched elements.</h3>
+                <button id="adderClass">Click me to add class</button>
+                <div id="addClass">
+                    <p>I'm box and I have a <span>class</span></p>
+                </div>
+            </section>
+
+            <section class="divider">
+                <section>
+                    <h2>.before()</h2>
+                    <h3>Description: Insert content, specified by the parameter, before each element in the set of matched elements.</h3>
+                </section>
+
+                <h2>.after()</h2>
+                <h3>Description: Insert content, specified by the parameter, after each element in the set of matched elements.</h3>
+                <button id="beforer">Click me to add before</button> <button id="afterer">Click me to add after</button>
+                <div id="box">
+                    <p>box</p>
+                </div>
+            </section>
+
+            <section class="divider">
+                <h2>.append()</h2>
+                <h3>Description: Insert content, specidfied by the parameter, to the end of each element in the set of matched elements.</h3>
+                <button id="appender">Click me to append</button>
+                <div id="append">
+                    <p>I'm box and</p>
+                </div>
+            </section>
+
+            <section class="divider">
+                <h2>.html()</h2>
+                <h3>Description: Set the HTML contents of each element in the set of matched elements.</h3>
+                <button id="htmler">Click me to change</button>
+                <div id="html">
+                    <p>I'm box and I'm not changed</p>
+                </div>
+            </section>
+
+            <section class="divider">
+                <h2>.attr()</h2>
+                <h3>Description: Get the value of an attribute for the first element in the set of matched elements or set one or more attributes for every matched element.</h3>
+                <button id="attrer">Click me to get attribute</button>
+                <div id="attr">
+                    <p>I'm box and I have an attribute</p>
+                </div>
+            </section>
+
+            <section class="divider">
+                <h2>.val()</h2>
+                <h3>Description: Get the current value of the first element in the set of matched elements or set the value of every matched element.</h3>
+                <button id="valer">Click me to enter a value</button>
+                <input id="val" type="text" value="" placeholder="I'll show the value">
+            </section>
+
+            <section class="divider">
+                <h2>.text()</h2>
+                <h3>Description: Get the combined text contents of each element in the set of matched elements, including their descendants, or set the text contents of the matched elements.</h3>
+                <button id="texter">Click me to change</button>
+                <div id="text">
+                    <p>I'm box and I'm not changed</p>
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

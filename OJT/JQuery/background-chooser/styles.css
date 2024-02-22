@@ -1,0 +1,27 @@
+#main_box {
+    background-color: lightgray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+}
+
+#main_box img {
+    display: block;
+    width: 200px;
+    height: 100px;
+    margin: 10px 0 15px 10px;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px;
+    font-family: Verdana;
+}
+
+.selected {
+    background-color: lightgray;
+}
+
+.selected img {
+    border: none;
+}

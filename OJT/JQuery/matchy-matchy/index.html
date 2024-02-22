@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Anthony A. Cabulang">
+    <title>Matchy - Matchy</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('img').click(function(){
+            var temp = $(this).attr('src');
+            $(this).attr('src', $(this).attr('data-alt-src'));
+            $(this).attr('data-alt-src', temp);
+        });
+    });
+    </script>
+</head>
+<body>
+    <section>
+        <img  src="images/question.jpg"  data-alt-src="images/1.jpg" alt="image1">
+        <img  src="images/question.jpg"  data-alt-src="images/2.jpg" alt="image2">
+        <img  src="images/question.jpg"  data-alt-src="images/3.jpg" alt="image3">
+        <img  src="images/question.jpg"  data-alt-src="images/4.jpg" alt="image4">
+        <img  src="images/question.jpg"  data-alt-src="images/5.jpg" alt="image5">
+        <img  src="images/question.jpg"  data-alt-src="images/6.jpg" alt="image6">
+        <img  src="images/question.jpg"  data-alt-src="images/1.jpg" alt="image1">
+        <img  src="images/question.jpg"  data-alt-src="images/3.jpg" alt="image3">
+        <img  src="images/question.jpg"  data-alt-src="images/4.jpg" alt="image4">
+        <img  src="images/question.jpg"  data-alt-src="images/6.jpg" alt="image6">
+        <img  src="images/question.jpg"  data-alt-src="images/5.jpg" alt="image5">
+        <img  src="images/question.jpg"  data-alt-src="images/2.jpg" alt="image2">
+    </section>
+</body>
+</html>
