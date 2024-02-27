@@ -1,0 +1,14 @@
+-- Anthony A. Cabulang
+-- SELECT * FROM customer WHERE customer_id=20;
+-- SELECT * FROM customer WHERE customer_id BETWEEN 20 and 60;
+-- SELECT * FROM customer WHERE first_name LIKE 'L%';
+-- SELECT * FROM customer WHERE first_name LIKE '%L%';
+-- SELECT * FROM customer WHERE first_name LIKE '%L';
+-- SELECT * FROM customer WHERE last_name LIKE 'C%' ORDER BY create_date DESC;
+-- SELECT * FROM customer WHERE last_name LIKE '%NN%' ORDER BY create_date ASC LIMIT 5;
+-- SELECT customer_id, first_name, last_name, email FROM customer 	WHERE customer_id IN (515, 181, 582, 503, 29, 85);
+-- SELECT customer_id, first_name, last_name, email AS "email_address" FROM customer WHERE store_id = 2;
+-- SELECT customer_id, first_name, last_name, email FROM customer ORDER BY email DESC;
+-- SELECT customer_id, first_name, last_name, email FROM customer WHERE active = 1;
+-- SELECT email, LENGTH(email) AS email_length FROM customer ORDER BY email_length DESC, email ASC;
+-- SELECT email, LENGTH(email) AS email_length FROM customer ORDER BY email_length ASC LIMIT 100;
