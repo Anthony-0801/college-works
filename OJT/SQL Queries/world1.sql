@@ -13,7 +13,7 @@ JOIN country ON city.CountryCode = country.Code
 
 SELECT country.name AS country, countrylanguage.language, countrylanguage.IsOfficial
 	FROM country
-	JOIN countrylanguage ON country.code = countrylanguage.CountryCode
+	JOIN countrylanguage ON country.code = countrylanguage.CountryCode;
 
 SELECT country.name AS country, countrylanguage.language
 	FROM country
