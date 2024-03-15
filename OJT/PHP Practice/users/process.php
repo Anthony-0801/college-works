@@ -1,11 +1,9 @@
 <?php
-// process.php
 // Include connection page
 require_once('new-connection.php');
 session_start();
-// Add validations here to make sure the information is correct
-// If validations pass, we insert the records into the database
 
+// Check if the form was submitted whether it was a registration or login
 if(isset($_POST['action']) && $_POST['action'] == 'register'){
     register_user($_POST);
 } else if(isset($_POST['action']) && $_POST['action'] == 'login'){
@@ -16,6 +14,7 @@ if(isset($_POST['action']) && $_POST['action'] == 'register'){
     die();
 }
 
+// Register user function - it validates the input and if it's valid, it inserts the user into the database
 function register_user($post) {
     $_SESSION['errors'] = array();
 
@@ -55,6 +54,7 @@ function register_user($post) {
 
 }
 
+// Login user function - it checks if the user exists in the database and if it does, it logs the user in
 function login_user($post) {
     $query = "SELECT * FROM test_users WHERE email = '{$post['email']}' AND password = '{$post['password']}'";
     $user = fetch_record($query);

@@ -1,5 +1,6 @@
 <?php 
 require('new-connection.php'); 
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -14,6 +15,12 @@ require('new-connection.php');
     <main>
     <h1>Users Login</h1>
     <form action="process.php" method="POST">
+<?php if(isset($_SESSION['errors'])) {
+        foreach($_SESSION['errors'] as $error) { ?>
+            <p><?= $error ?></p>
+<?php   } ?>
+<?php   unset($_SESSION['errors']);
+        } ?>
         <input type="hidden" name="action" value="login">
 
         <label for="email">Email:</label>
